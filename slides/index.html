@@ -40,6 +40,15 @@
         .reveal h3 {
             font-size: 1.4em;
         }
+
+        .url {
+            font-family: monospace;
+            font-size: 0.6em;
+        }
+
+        p i {
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -82,29 +91,86 @@
 				exactly once.</p>
 		</section>
 		<section>
-			<p>Example: Put one stone into a bucket.</p>
+			<p>Example: Put one stone into an <i>empty</i> bucket.</p>
 			<p>Check the contents of the bucket before doing anything.</p>
 		</section>
 		<section>
 			<p>We can always create a persistent outcome by recording something.</p>
 		</section>
 		<section data-auto-animate>
-			<p>Example: Nod your head once.</p>
+			<p>Example: Put one stone into a non-empty bucket.</p>
 			<ul>
 				<li>Check nothing written on paper.</li>
-				<li>Nod your head.</li>
-				<li>Write "nodded" on paper.</li>
+				<li>Put stone in bucket.</li>
+				<li>Write "added stone" on paper.</li>
 			</ul>
 		</section>
 		<section data-auto-animate>
-			<p>Example: Nod your head once.</p>
+			<p>Example: Put one stone into a non-empty bucket.</p>
 			<ul>
 				<li>Check nothing written on paper.</li>
-				<li>Nod your head.</li>
+				<li>Put stone in bucket.</li>
 				<li style="list-style-type: none"><img style="max-width: 200px;" src="images/neuralizer.png"/></li>
-				<li>Write "nodded" on paper.</li>
+				<li>Write "added stone" on paper.</li>
 			</ul>
 		</section>
+        <section>
+            <p>Problem:</p>
+            <p>The action and the persistent part are separate things.</p>
+            <p>Solution:</p>
+            <p>Guarantee all the steps happen.</p>
+        </section>
+        <section data-background="images/ATM-Cash-Machine.jpg" data-background-opacity="0.6">
+            <h2>Transactions</h2>
+        </section>
+        <section>
+            <p class="url">https://en.wikipedia.org/wiki/Transaction_processing</p>
+            <p>Each transaction must succeed or fail as a complete unit; it can never be only partially complete.</p>
+        </section>
+        <section>
+            <p>Example: Put one stone into a non-empty bucket.</p>
+            <ul>
+                <li>Check nothing written on paper.</li>
+                <li>Put stone in bucket.</li>
+                <li>Write "added stone" on paper.</li>
+            </ul>
+        </section>
+        <section>
+            <p>Making a list of things transactional:</p>
+            <ul>
+                <li class="fragment">Obtain unique transaction ID.</li>
+                <li class="fragment">Record transaction start.</li>
+                <li class="fragment">Perform steps, attaching transaction ID.</li>
+                <li class="fragment">Record transaction end.</li>
+            </ul>
+        </section>
+        <section>
+            <p>If at any time:</p>
+            <img style="max-width: 200px;" src="images/neuralizer.png"/>
+            <p class="fragment">If transaction is incomplete,
+                <span class="fragment"><br> <i>undo all finished steps</i></span>
+                <span class="fragment"><br> OR <i>perform all missing steps</i>.</span></p>
+        </section>
+        <section>
+            <p>Example: Put one stone into a non-empty bucket.</p>
+            <ul>
+                <li class="fragment">Obtain unique transaction ID: 142</li>
+                <li class="fragment">Write "start adding stone 142" on paper.</li>
+                <li class="fragment">Write "142" on stone and put in bucket.</li>
+                <li class="fragment">Write "finished adding stone 142" on paper.</li>
+            </ul>
+        </section>
+        <section data-background="images/router-cables.jpg" data-background-opacity="0.6">
+            <h2>Distributed Systems</h2>
+        </section>
+        <section>
+            <p>What if this is your transaction:</p>
+            <ul>
+                <li>Step 1, ...</li>
+                <li>Step 2, HTTP POST /somewhere</li>
+                <li>Step 3, ...</li>
+            </ul>
+        </section>
     </div>
 </div>
 
