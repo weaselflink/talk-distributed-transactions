@@ -49,6 +49,14 @@
         p i {
             font-style: italic;
         }
+
+        .speech {
+            padding: 10px;
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -166,10 +174,21 @@
         <section>
             <p>What if this is your transaction:</p>
             <ul>
-                <li>Step 1, ...</li>
-                <li>Step 2, HTTP POST /somewhere</li>
-                <li>Step 3, ...</li>
+                <li>Step 1, Do A</li>
+                <li>Step 2, Tell someone to do B over the phone</li>
+                <li>Step 3, Do C</li>
             </ul>
+        </section>
+        <section>
+            <p>Phases of a remote (phone) call</p>
+            <div style="position: relative;">
+                <img src="images/pexels-caique-araujo-10763172.jpg" width="35%"/>
+                <img src="images/pexels-cottonbro-9068391.jpg" width="35%"/>
+                <p class="speech fragment" style="position: absolute; top: -20px; left: 100px;">Could you do<br> &lt;action&gt; please?</p>
+                <p class="speech fragment" style="position: absolute; top: 70px; left: 550px;">Just a minute ...</p>
+                <p class="speech fragment" style="position: absolute; top: 360px; left: 600px;">Ok, done.</p>
+                <p class="speech fragment " style="position: absolute; top: 400px; left: 120px;">Thanks, mate.</p>
+            </div>
         </section>
     </div>
 </div>
