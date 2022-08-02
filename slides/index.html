@@ -215,6 +215,22 @@
                 <p class="speech" style="position: absolute; top: 430px; right: 120px;">???</p>
             </div>
         </section>
+        <section>
+            <p>Problem:</p>
+            <p>Ensure the remote action is<br> only performed exactly once.</p>
+            <p>Solution:</p>
+            <p>Some as for local actions<br> ... use transactions.</p>
+        </section>
+        <section>
+            <p>Steps for remote transactions</p>
+            <ul>
+                <li class="fragment">Obtain unique transaction ID.</li>
+                <li class="fragment">Record transaction start.</li>
+                <li class="fragment">Describe actions to callee, attaching transaction ID.</li>
+                <li class="fragment">Wait for callee to report success.</li>
+                <li class="fragment">Record transaction end.</li>
+            </ul>
+        </section>
     </div>
 </div>
 
