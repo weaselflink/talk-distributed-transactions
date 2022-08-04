@@ -87,41 +87,41 @@
                 <p>your memory might get erased.</p>
             </div>
         </section>
-		<section>
-			<p>Without a persistent outcome<br> you are unable to check what you did.</p>
-		</section>
-		<section>
-			<p>Example: Nod your head once.</p>
-			<p>After a hundred repetitions your neck might hurt.</p>
-		</section>
-		<section>
-			<p>With a persistent outcome, we get a procedure<br> that can ensure
-				exactly once.</p>
-		</section>
-		<section>
-			<p>Example: Put one stone into an <i>empty</i> bucket.</p>
-			<p>Check the contents of the bucket before doing anything.</p>
-		</section>
-		<section>
-			<p>We can always create a persistent outcome by recording something.</p>
-		</section>
-		<section data-auto-animate>
-			<p>Example: Put one stone into a non-empty bucket.</p>
-			<ul>
-				<li>Check nothing written on paper.</li>
-				<li>Put stone in bucket.</li>
-				<li>Write "added stone" on paper.</li>
-			</ul>
-		</section>
-		<section data-auto-animate>
-			<p>Example: Put one stone into a non-empty bucket.</p>
-			<ul>
-				<li>Check nothing written on paper.</li>
-				<li>Put stone in bucket.</li>
-				<li style="list-style-type: none"><img style="max-width: 200px;" src="images/neuralizer.png"/></li>
-				<li>Write "added stone" on paper.</li>
-			</ul>
-		</section>
+        <section>
+            <p>Without a persistent outcome<br> you are unable to check what you did.</p>
+        </section>
+        <section>
+            <p>Example: Nod your head once.</p>
+            <p>After a hundred repetitions your neck might hurt.</p>
+        </section>
+        <section>
+            <p>With a persistent outcome, we get a procedure<br> that can ensure
+                exactly once.</p>
+        </section>
+        <section>
+            <p>Example: Put one stone into an <i>empty</i> bucket.</p>
+            <p>Check the contents of the bucket before doing anything.</p>
+        </section>
+        <section>
+            <p>We can always create a persistent outcome by recording something.</p>
+        </section>
+        <section data-auto-animate>
+            <p>Example: Put one stone into a non-empty bucket.</p>
+            <ul>
+                <li>Check nothing written on paper.</li>
+                <li>Put stone in bucket.</li>
+                <li>Write "added stone" on paper.</li>
+            </ul>
+        </section>
+        <section data-auto-animate>
+            <p>Example: Put one stone into a non-empty bucket.</p>
+            <ul>
+                <li>Check nothing written on paper.</li>
+                <li>Put stone in bucket.</li>
+                <li style="list-style-type: none"><img style="max-width: 200px;" src="images/neuralizer.png"/></li>
+                <li>Write "added stone" on paper.</li>
+            </ul>
+        </section>
         <section>
             <p>Problem:</p>
             <p>The action and the persistent part are separate things.</p>
@@ -184,7 +184,8 @@
             <div style="position: relative;">
                 <img src="images/pexels-caique-araujo-10763172.jpg" width="35%"/>
                 <img src="images/pexels-cottonbro-9068391.jpg" width="35%"/>
-                <p class="speech" style="position: absolute; top: -20px; left: 100px;">Could you do<br> &lt;action&gt; please?</p>
+                <p class="speech" style="position: absolute; top: -20px; left: 100px;">Could you do<br> &lt;action&gt;
+                    please?</p>
                 <p class="speech" style="position: absolute; top: 70px; right: 120px;">Just a minute ...</p>
                 <p class="speech" style="position: absolute; top: 160px; right: 120px;">[silence]</p>
                 <p class="speech" style="position: absolute; top: 250px; right: 120px;">Ok, done.</p>
@@ -196,7 +197,8 @@
             <div style="position: relative;">
                 <img src="images/pexels-caique-araujo-10763172.jpg" width="35%"/>
                 <img src="images/pexels-cottonbro-9068391.jpg" width="35%"/>
-                <p class="speech" style="position: absolute; top: -20px; left: 100px;">Could you do<br> &lt;action&gt; please?</p>
+                <p class="speech" style="position: absolute; top: -20px; left: 100px;">Could you do<br> &lt;action&gt;
+                    please?</p>
                 <p class="speech" style="position: absolute; top: 70px; right: 120px;">Just a minute ...</p>
                 <p class="speech" style="position: absolute; top: 160px; right: 120px;">[silence]</p>
                 <p class="speech" style="position: absolute; top: 340px; left: 120px;">Hello?</p>
@@ -207,7 +209,8 @@
             <div style="position: relative;">
                 <img src="images/pexels-caique-araujo-10763172.jpg" width="35%"/>
                 <img src="images/pexels-cottonbro-9068391.jpg" width="35%"/>
-                <p class="speech" style="position: absolute; top: -20px; left: 100px;">Could you do<br> &lt;action&gt; please?</p>
+                <p class="speech" style="position: absolute; top: -20px; left: 100px;">Could you do<br> &lt;action&gt;
+                    please?</p>
                 <p class="speech" style="position: absolute; top: 70px; right: 120px;">Just a minute ...</p>
                 <p class="speech" style="position: absolute; top: 160px; right: 120px;">[silence]</p>
                 <p class="speech" style="position: absolute; top: 250px; right: 120px;">Ok ...</p>
@@ -230,6 +233,28 @@
                 <li class="fragment">Wait for callee to report success.</li>
                 <li class="fragment">Record transaction end.</li>
             </ul>
+        </section>
+        <section>
+            <p>Problem:</p>
+            <p>The transaction has to be unique for the callee!</p>
+            <div class="fragment">
+                <p>Solutions:</p>
+                <p>Caller adds own ID to transaction ID<br> (e.g. own phone number).</p>
+                <p>OR</p>
+                <p>Callee creates transaction ID.</p>
+            </div>
+        </section>
+        <section>
+            <p>Recovery from call failure</p>
+            <div style="position: relative;">
+                <img src="images/pexels-caique-araujo-10763172.jpg" width="35%"/>
+                <img src="images/pexels-cottonbro-9068391.jpg" width="35%"/>
+                <p class="speech" style="position: absolute; top: -20px; left: 100px;">
+                    Using transaction<br> 143, could you do<br> &lt;action&gt;please?</p>
+                <p class="speech" style="position: absolute; top: 210px; right: 120px;">
+                    Transaction 143<br> is already done.</p>
+                <p class="speech" style="position: absolute; top: 390px; left: 120px;">Excellent!</p>
+            </div>
         </section>
         <section>
             <p>Repo with slides:</p>
