@@ -77,10 +77,7 @@
         <section>
             <p>Imagine you have to ensure<br> you do something exactly once.</p>
         </section>
-        <section data-auto-animate>
-            <p>But at any time ...</p>
-        </section>
-        <section data-auto-animate>
+        <section>
             <p>But at any time ...</p>
             <div>
                 <img src="images/neuralizer.png"/>
@@ -89,23 +86,17 @@
         </section>
         <section>
             <p>Without a persistent outcome<br> you are unable to check what you did.</p>
-        </section>
-        <section>
             <p>Example: Nod your head once.</p>
             <p>After a hundred repetitions your neck might hurt.</p>
         </section>
         <section>
             <p>With a persistent outcome, we get a procedure<br> that can ensure
                 exactly once.</p>
-        </section>
-        <section>
-            <p>Example: Put one stone into an <i>empty</i> bucket.</p>
+            <p>Example: Put one stone into an <b><i>empty</i></b> bucket.</p>
             <p>Check the contents of the bucket before doing anything.</p>
         </section>
-        <section>
-            <p>We can always create a persistent outcome by recording something.</p>
-        </section>
         <section data-auto-animate>
+            <p>We can always create a persistent outcome by recording something.</p>
             <p>Example: Put one stone into a non-empty bucket.</p>
             <ul>
                 <li>Check nothing written on paper.</li>
@@ -146,26 +137,26 @@
         <section>
             <p>Making a list of things transactional:</p>
             <ul>
-                <li class="fragment">Obtain unique transaction ID.</li>
-                <li class="fragment">Record transaction start.</li>
-                <li class="fragment">Perform steps, attaching transaction ID.</li>
-                <li class="fragment">Record transaction end.</li>
+                <li>Obtain unique transaction ID.</li>
+                <li>Record transaction start.</li>
+                <li>Perform steps, attaching transaction ID.</li>
+                <li>Record transaction end.</li>
             </ul>
         </section>
         <section>
             <p>If at any time:</p>
             <img style="max-width: 200px;" src="images/neuralizer.png"/>
-            <p class="fragment">If transaction is incomplete,
-                <span class="fragment"><br> <i>undo all finished steps</i></span>
-                <span class="fragment"><br> OR <i>perform all missing steps</i>.</span></p>
+            <p>If transaction is incomplete,
+                <span><br> <i>undo all finished steps</i></span>
+                <span><br> OR <i>perform all missing steps</i>.</span></p>
         </section>
         <section>
             <p>Example: Put one stone into a non-empty bucket.</p>
             <ul>
-                <li class="fragment">Obtain unique transaction ID: 142</li>
-                <li class="fragment">Write "start adding stone 142" on paper.</li>
-                <li class="fragment">Write "142" on stone and put in bucket.</li>
-                <li class="fragment">Write "finished adding stone 142" on paper.</li>
+                <li>Obtain unique transaction ID: 142</li>
+                <li>Write "start adding stone 142" on paper.</li>
+                <li>Write "142" on stone and put in bucket.</li>
+                <li>Write "finished adding stone 142" on paper.</li>
             </ul>
         </section>
         <section data-background="images/router-cables.jpg" data-background-opacity="0.6">
@@ -227,17 +218,17 @@
         <section>
             <p>Steps for remote transactions</p>
             <ul>
-                <li class="fragment">Obtain unique transaction ID.</li>
-                <li class="fragment">Record transaction start.</li>
-                <li class="fragment">Describe actions to callee, attaching transaction ID.</li>
-                <li class="fragment">Wait for callee to report success.</li>
-                <li class="fragment">Record transaction end.</li>
+                <li>Obtain unique transaction ID.</li>
+                <li>Record transaction start.</li>
+                <li>Describe actions to callee, attaching transaction ID.</li>
+                <li>Wait for callee to report success.</li>
+                <li>Record transaction end.</li>
             </ul>
         </section>
         <section>
             <p>Problem:</p>
             <p>The transaction has to be unique for the callee!</p>
-            <div class="fragment">
+            <div>
                 <p>Solutions:</p>
                 <p>Caller adds own ID to transaction ID<br> (e.g. own phone number).</p>
                 <p>OR</p>
