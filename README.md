@@ -11,3 +11,5 @@ Also thanks to [Pexels](https://www.pexels.com/). They provide a huge selection 
 
 Same goes for [Pixabay](https://pixabay.com). Their [license](https://pixabay.com/service/license/) is also
 pretty much as free as it gets.
+
+Image from Men In Black (1997) is copyrighted by Sony Pictures, but used under fair use (nonprofit, substantiality).
